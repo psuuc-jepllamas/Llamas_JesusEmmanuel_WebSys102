@@ -1,0 +1,103 @@
+/* Gradient Background for Auth Pages */
+.auth-container {
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Styling */
+.auth-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Logo Styling */
+.auth-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.auth-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Inputs */
+.auth-form .form-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.auth-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.auth-form .form-control:focus {
+    border-color: #fdfdfd;
+    box-shadow: 0 0 5px rgba(107, 72, 255, 0.3);
+}
+
+/* Buttons */
+.auth-form .btn-primary {
+    background: #1A1A2E;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.auth-form .btn-primary:hover {
+    background: #2A2A4E;
+}
+
+/* Links */
+.auth-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.auth-links a {
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: auto;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
