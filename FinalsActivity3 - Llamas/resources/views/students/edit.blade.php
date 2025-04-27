@@ -37,6 +37,10 @@
                         <input type="email" name="email" class="form-control" value="{{ old('email', $student->email) }}" required>
                     </div>
                     <div class="mb-3">
+                        <label for="name" class="form-label">Address</label>
+                        <input type="text" name="address" class="form-control" value="{{ old('address', $student->address) }}" required>
+                    </div>
+                    <div class="mb-3">
                         <label for="name" class="form-label">Student ID</label>
                         <input type="text" name="studentID" class="form-control" value="{{ old('studentID', $student->studentID) }}" required>
                     </div>
@@ -53,6 +57,15 @@
                             <option value="BS Computer Engineering" {{ old('course', $student->course) == 'BS Computer Engineering' ? 'selected' : '' }}>BS Computer Engineering</option>
                             <option value="BS Mathematics" {{ old('course', $student->course) == 'BS Mathematics' ? 'selected' : '' }}>BS Mathematics</option>
                             <option value="BS Architecture" {{ old('course', $student->course) == 'BS Architecture' ? 'selected' : '' }}>BS Architecture</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Year Level</label>
+                        <select name="yearlevel" id="">
+                            <option value="1st Year" {{ old('yearlevel', $student->yearlevel) == '1st Year' ? 'selected' : '' }}>1st Year</option>
+                            <option value="2nd Year" {{ old('yearlevel', $student->yearlevel) == '2nd Year' ? 'selected' : '' }}>2nd Year</option>
+                            <option value="3rd Year" {{ old('yearlevel', $student->yearlevel) == '3rd Year' ? 'selected' : '' }}>3rd Year</option>
+                            <option value="4th Year" {{ old('yearlevel', $student->yearlevel) == '4th Year' ? 'selected' : '' }}>4th Year</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Update Product</button>
