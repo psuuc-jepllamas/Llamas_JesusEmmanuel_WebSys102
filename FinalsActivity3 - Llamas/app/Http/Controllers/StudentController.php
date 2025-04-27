@@ -17,6 +17,7 @@ class StudentController extends Controller
                 'email' => $student->email,
                 'studentID' => $student->studentID,
                 'course' => $student->course,
+                'yearlevel' => $student->yearlevel,
             ]));
             
             return $student;
@@ -44,6 +45,7 @@ class StudentController extends Controller
             'email' => 'required|string|email|unique:students',
             'studentID' => 'required|string|unique:students',
             'course' => 'required',
+            'yearlevel' => 'required',
         ]);
 
         Student::create($request->all());
@@ -60,6 +62,7 @@ class StudentController extends Controller
             'email' => $student->email,
             'studentID' => $student->studentID,
             'course' => $student->course,
+            'yearlevel' => $student->yearlevel,
         ]));
 
         return view('students.show', compact('student', 'qr'));
@@ -78,6 +81,7 @@ class StudentController extends Controller
             'email' => 'required|string|email|unique:students',
             'studentID' => 'required|string|unique:students',
             'course' => 'required',
+            'yearlevel' => 'required',
         ]);
 
         $student->update($request->all());
