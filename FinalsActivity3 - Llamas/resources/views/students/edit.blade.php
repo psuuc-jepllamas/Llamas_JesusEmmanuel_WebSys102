@@ -68,7 +68,7 @@
                             <option value="4th Year" {{ old('yearlevel', $student->yearlevel) == '4th Year' ? 'selected' : '' }}>4th Year</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Update Product</button>
+                    <button type="submit" class="btn btn-primary">Update Student</button>
                 </form>
             </div>
         </div>
