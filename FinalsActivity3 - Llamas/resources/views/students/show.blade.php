@@ -14,8 +14,10 @@
                 <p class="card-text"><strong>First name:</strong> {{ $student->firstname }}</p>
                 <p class="card-text"><strong>Last name:</strong> {{ $student->lastname }}</p>
                 <p class="card-text"><strong>Email address:</strong> {{ $student->email }}</p>
+                <p class="card-text"><strong>Address:</strong> {{ $student->address }}</p>
                 <p class="card-text"><strong>Student ID:</strong> {{ $student->studentID }}</p>
                 <p class="card-text"><strong>Course:</strong> {{ $student->course }}</p>
+                <p class="card-text"><strong>Year Level:</strong> {{ $student->yearlevel }}</p>
                 <p class="card-text"><strong>Created At:</strong> {{ $student->created_at }}</p>
                 <p class="card-text"><strong>Updated At:</strong> {{ $student->updated_at }}</p>
                 <div class="text-center">
