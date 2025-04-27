@@ -7,7 +7,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class StudentController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
 	    $students = Student::all()->map(function ($student) {        
         $student->qr = QrCode::size(100)->generate(json_encode([
@@ -21,6 +21,14 @@ class StudentController extends Controller
             
             return $student;
         });
+
+        $query = Student::query();
+
+        if ($request->filled('course')) {
+            $query->where('course', $request->course);
+        }
+
+        $students = $query->latest()->paginate(10);
 
         return view('students.index', compact('students'));
     }
