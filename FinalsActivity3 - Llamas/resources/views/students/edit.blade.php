@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mt-4">
-        <h1 class="mb-4">Edit Product</h1>
+        <h1 class="mb-4">Edit Student</h1>
 
         <div class="mb-3">
             <a href="{{ route('students.index') }}" class="btn btn-secondary">Back to Records</a>
