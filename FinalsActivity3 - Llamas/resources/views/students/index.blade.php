@@ -49,6 +49,7 @@
                     <th>First name</th>
                     <th>Last name</th>
                     <th>Email address</th>
+                    <th>Address</th>
                     <th>Student ID</th>
                     <th>Course</th>
                     <th>Created At</th>
@@ -64,6 +65,7 @@
                         <td>{{ $student->firstname }}</td>
                         <td>{{ $student->lastname }}</td>
                         <td>{{ $student->email }}</td>
+                        <td>{{ $student->address }}</td>
                         <td>{{ $student->studentID }}</td>
                         <td>{{ $student->course }}</td>
                         <td>{{ $student->created_at }}</td>
