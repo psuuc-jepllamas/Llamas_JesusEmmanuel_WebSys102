@@ -28,8 +28,6 @@ class StudentController extends Controller
             $query->where('course', $request->course);
         }
 
-        $students = $query->latest()->paginate(10);
-
         return view('students.index', compact('students'));
     }
 
